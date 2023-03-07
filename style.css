@@ -75,11 +75,8 @@ body {
   }
   
 .form-container{
-    width: 60vw;   
-}
-
-.logo-container{  
-
+    width: 60vw;  
+    padding: 25px; 
 }
 
 .logo-text{
@@ -127,6 +124,15 @@ body {
 .icon{
     width: 35px;
 }
+
+#change-text {
+    opacity: 0; /* Start with the text hidden */
+    transition: opacity 0.5s ease-in-out; /* Add a transition for opacity changes */
+  }
+
+  #change-text.show {
+    opacity: 1; /* Show the text when the "show" class is added */
+  }
 
 h2, h4{
     color: var(--dark-font);
