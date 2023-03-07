@@ -62,21 +62,11 @@ body {
     background-size: 1100px;
 }
 
-.noise-image {  
-   /*position: absolute;
-    left: 0%;
-    top: 0%;
-    right: 0%;
-    bottom: 0%;
-    background-image: url("https://stackdiary.com/wp-content/uploads/2022/10/noise_img.png");
-    background-position: 0px 0px;
-    background-size: auto;
-    opacity: 0.5;*/
-  }
   
 .form-container{
     width: 60vw;  
     padding: 25px; 
+    display: inline-block;
 }
 
 .logo-text{
@@ -125,16 +115,84 @@ body {
     width: 35px;
 }
 
+.phrases-box
+{
+    min-height: 150px;
+    margin-top: 25px;
+}
+
 #change-text {
-    opacity: 0; /* Start with the text hidden */
+    display: none; /* Start with the text hidden */
     transition: opacity 0.5s ease-in-out; /* Add a transition for opacity changes */
   }
 
   #change-text.show {
-    opacity: 1; /* Show the text when the "show" class is added */
+    display: flex; /* Show the text when the "show" class is added */
   }
 
-h2, h4{
+.register-box{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#register-form>div[class$="-box"]
+{
+    display: inline-grid;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+input{
+    background-color: transparent;
+    border: 1px solid #d8d8d8;
+    padding: 12px;
+    font-size: 16px;
+    font-size: 1rem;
+}
+
+input:invalid{
+    border: 1px solid #b92326;
+    background-color: rgba(185, 35, 38, 0.25);
+}
+
+input:valid{
+    border: var(--green);
+    background-color: rgba(136, 239, 81, 0.525);
+}
+
+
+input[type="submit"] {
+    background-color: var(--dark-font);
+    border: 1px solid var(--dark-font);
+    color: var(--main4);
+    padding: 12px 50px;
+    font-size: 16px;
+    font-size: 1rem;
+    margin-top: 5px;
+    display: block;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    border: 1px solid var(--main4);
+}
+
+.account-help-box{
+    flex-direction: row;
+    display: flex;
+}
+a{
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+a:hover{
+    cursor: pointer;
+    color: white;
+}
+
+h1,h2, h4{
     color: var(--dark-font);
 }
 

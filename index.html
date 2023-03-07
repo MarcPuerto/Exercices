@@ -18,19 +18,69 @@
                 <h1 class="animate-charcter">SIGN UP</h1>
                 <h3>Welcome to the Library of Alexandria</h3>
             </div>
+
             <div class="instagram-pic">
                 <img class="icon" src="insta.png" alt="Girl in a jacket" />
             </div>
 
         </div>
+
         <div class="form-container">
             <div class="phrases-box">
-                <h2 id="change-text"></h2>
+                <h2 id="change-text" class="show"></h2>
             </div>
 
+            <div class="register-box">
+                <h1 class="register-title">Register your user to the website</h1>
+                <form id="register-form" class="register-from">
+                    <div class="first-name-box" >
+                        <label for="name">Name</label>
+                        <input id="name" placeholder="Name *" name="name" type="text" value="" pattern="^[^0-9]+$" size="40" maxlength="80" required>
+                    </div>
+
+                    <div class="second-name-box">
+                        <label for="second-name">Surname</label>
+                        <input id="second-name" placeholder="Surname *" name="second-name" type="text" value="" size="40" maxlength="80" required>
+                      </div>
+
+                      <div class="email-box">
+                        <label for="email">Email</label>
+                        <input id="email" placeholder="Email *" name="email" type="email" value="" size="40" maxlength="100" aria-describedby="email-notes" required>
+                      </div>
+
+                      <div class="phone-box">
+                        <label for="phone">Phone</label>
+                        <input id="phone" placeholder="Phone" name="phone" type="phone" value="" size="40" maxlength="200" required>
+                      </div>
+
+                      <div class="password-box">
+                        <label for="password">Password</label>
+                        <input id="password" placeholder="Password" name="password" type="password" value="" size="40" maxlength="20" required>
+                      </div>
+
+                      <div class="re-password-box">
+                        <label for="re-password">Confirm Password</label>
+                        <input id="re-password" placeholder="Confirm Password" name="re-password" type="password" value="" size="40" maxlength="20" required>
+                      </div>
+
+                      <div class="submit-button">
+                        <input name="submit" type="submit" id="submit" class="submit" value="Register">
+                      </div>
+                </form>
+
+                <div class="account-help-box">
+                    <p>Do you already have an account? </p>
+                    <a href="https://pointerpointer.com/">
+                        Log In
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
 </body>
 
 </html>
+
+
+
