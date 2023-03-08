@@ -61,7 +61,7 @@ body {
 .photo-container {
     width: 40vw;
     height: 100vw;
-    background-image: url(geometria-ii.svg);
+    background-image: url(./images/geometria-ii.svg);
     background-size: 1100px;
 }
 
