@@ -1,4 +1,8 @@
 let phrases = document.getElementById("change-text");
+let submitButton = document.getElementsByClassName("submit-button");
+let password = document.getElementById("password");
+let re_password = document.getElementById("re-password");
+let password_message = document.getElementsByClassName("password-message");
 
 // Array of texts to display
 const textArray = [
@@ -23,3 +27,16 @@ setInterval(() => {
     phrases.classList.add("show"); // Add the "show" class to fade in the text
   }, 500);
 }, 7000);
+
+
+function submitClick(event) {
+    if (password.value !== re_password.value) {
+      password_message[0].style.display = "block"; // show the error message
+      event.preventDefault();
+    } else {
+      password_message[0].style.display = "none"; // hide the error message
+
+    }
+} 
+
+

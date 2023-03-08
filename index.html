@@ -15,24 +15,22 @@
     <div class="main-container">
         <div class="photo-container">
             <div class="logo-text">
-                <h1 class="animate-charcter">SIGN UP</h1>
+                <h1 class="animate-character">SIGN UP</h1>
                 <h3>Welcome to the Library of Alexandria</h3>
             </div>
-
-            <div class="instagram-pic">
-                <img class="icon" src="insta.png" alt="Girl in a jacket" />
-            </div>
-
         </div>
 
         <div class="form-container">
             <div class="phrases-box">
-                <h2 id="change-text" class="show"></h2>
+                <h2 id="change-text" class="show">
+                    “Every deep thinker is more afraid of being understood than of being misunderstood.”
+                    - Friedrich Neitzsche
+                </h2>
             </div>
 
             <div class="register-box">
                 <h1 class="register-title">Register your user to the website</h1>
-                <form id="register-form" class="register-from">
+                <form method="post" id="register-form" class="register-from">
                     <div class="first-name-box" >
                         <label for="name">Name</label>
                         <input id="name" placeholder="Name *" name="name" type="text" value="" pattern="^[^0-9]+$" size="40" maxlength="80" required>
@@ -50,21 +48,27 @@
 
                       <div class="phone-box">
                         <label for="phone">Phone</label>
-                        <input id="phone" placeholder="Phone" name="phone" type="phone" value="" size="40" maxlength="200" required>
+                        <input id="phone" placeholder="Phone *" name="phone" type="phone" value="" size="40" maxlength="200" required>
                       </div>
 
                       <div class="password-box">
                         <label for="password">Password</label>
-                        <input id="password" placeholder="Password" name="password" type="password" value="" size="40" maxlength="20" required>
+                        <input id="password" placeholder="Password *" name="password" type="password" value="" size="40" maxlength="20" required>
                       </div>
 
                       <div class="re-password-box">
                         <label for="re-password">Confirm Password</label>
-                        <input id="re-password" placeholder="Confirm Password" name="re-password" type="password" value="" size="40" maxlength="20" required>
+                        <input id="re-password" placeholder="Confirm Password *" name="re-password" type="password" value="" size="40" maxlength="20" required>
                       </div>
 
                       <div class="submit-button">
-                        <input name="submit" type="submit" id="submit" class="submit" value="Register">
+                        <input name="submit" onclick="submitClick(event)" type="submit" id="submit" class="submit" value="Register">
+                      </div>
+
+                      <div class="password-message">
+                        <p class="error-message">
+                            * The password should match
+                        </p>
                       </div>
                 </form>
 
@@ -73,6 +77,12 @@
                     <a href="https://pointerpointer.com/">
                         Log In
                     </a>
+                </div>
+
+                <div class="socialmedia-pic">
+                    <img class="icon" src="insta.png"/>
+                    <img class="icon" src="facebook.png"/>
+                    <img class="icon" src="img_276960.png"/>
                 </div>
             </div>
         </div>
